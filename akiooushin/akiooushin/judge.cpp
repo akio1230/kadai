@@ -1,18 +1,18 @@
 #include <stdio.h>
 
-void Comparison(int InputNum, int randNum)
+void Comparison(int number, int answer)
 {
-	if (InputNum > randNum)
+	if (number > answer)
 	{
 		printf("大きい\n");
 	}
-	else if (InputNum < randNum)
+	else if (number < answer)
 	{
-		printf("小さい");
+		printf("小さい\n");
 	}
 	else
 	{
-		printf("ゲームクリア");
+		printf("ゲームクリア\n");
 	}
 
 }

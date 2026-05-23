@@ -14,7 +14,6 @@ int randnum()
 {
     srand((unsigned int)time(NULL));
     int randNum = rand() % 10;
-    printf("ƒ‰ƒ“ƒ_ƒ€”š %d ‚Å‚·\n", randNum);
     return randNum;
 }
 

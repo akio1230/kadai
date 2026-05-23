@@ -2,6 +2,7 @@
 //
 
 #include <stdio.h>
+#include <stdbool.h>
 #include "input.h"
 #include "judge.h"
 
@@ -9,14 +10,20 @@ int main()
 {
     int answer;
     int number;
+    bool gameclear = false;
 
     answer = randnum();
-    number = Inputnum();
+    
 
-    while (answer != number)
+    while (!gameclear)
     {
         number = Inputnum();
-        Comparison(answer, number);
+        Comparison(number, answer);
+        
+        if (number == answer)
+        {
+            break;
+        }
     }
 
     return 0;

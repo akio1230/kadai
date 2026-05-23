@@ -1,4 +1,4 @@
 #pragma once
 
-int Comparison(int InputNum, int randNum);
+void Comparison(int number, int answer);
 
